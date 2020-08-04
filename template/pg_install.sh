@@ -638,6 +638,7 @@ log_temp_files = 50MB
 track_activity_query_size = 65536
 pg_stat_statements.max = 10000
 pg_stat_statements.track = all
+unix_socket_directory = '/tmp'
 EOFF
 	echo $PARAMETER_ADD | sed 's/,/\n/g' >> "$PGDATA"/postgresql.conf
 	if [ "$DB_VERSION_MAJOR" -gt "94" ] ; then
