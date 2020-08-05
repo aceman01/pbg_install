@@ -541,7 +541,7 @@ export LD_LIBRARY_PATH=\$PGHOME/lib
 export PGUSER=$PGUSER
 export PGDATABASE=$PGDATABASE
 export PGPORT=$PGPORT
-export PGHOST=/tmp
+export PGHOST=localhost
 EOFF
 	echo "" >> "$INSTALL_DIR"/PG_"$TODAY"_INSTALL.log
 	echo ""
